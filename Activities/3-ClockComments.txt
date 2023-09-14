@@ -1,0 +1,9 @@
+Clock comment activity
+
+To see the clock running you can comment out lines 1-32, and uncomment out lines 34-51 in the index.html file. Remember to then save the file (command+s)
+
+Task: Read through all the code in clock.js and add comments to the placeholder areas.
+
+Help:
+
+++ in Javascript (and most other programming languages) means to increment a value by 1

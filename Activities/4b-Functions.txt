@@ -1,0 +1,15 @@
+Well done on writing your first function!
+Now we want to give the function some input from the user.
+
+The first thing to try is to write the following and run it:
+    prompt("Can you see my question?)
+
+You should have seen your question with an input box to type a response. We can capture that response in a variable like this:
+    var itemCostPromptValue = prompt("What is the cost of the item?")
+
+The value written into the prompt box is assigned to the variable itemCostPromptValue. I can then use this variable by passing it into my function:
+
+    var myMoneyLeft = calcMyMoney(itemCostPromptValue)
+    console.log(myMoneyLeft)
+
+Activity: Can you do something similar using your age function from the last exercise?

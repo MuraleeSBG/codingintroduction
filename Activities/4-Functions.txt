@@ -1,0 +1,18 @@
+Function activity
+
+Example of a function:
+A person has £300. They want to buy an item and work out the change.
+This crude function receives the costOfItem and returns the change from 300.
+
+function calcMyMoney (costOfItem) {
+    return 300 - costOfItem
+}
+
+Let's use the function by giving it the costOfItem, and assigning the value to a new variable called myMoneyLeft:
+    var myMoneyLeft = calcMyMoney(100)
+
+Let's view it in the console:
+    console.log(myMoneyLeft)
+
+Aim for this activity: Add a function that receives your birth year and returns your age
+Tip: The current year - your birth year = your age

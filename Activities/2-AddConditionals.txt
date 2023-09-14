@@ -1,0 +1,17 @@
+Conditionals
+
+Task: Add a condition after your age variable that provides the user a message
+
+Example:
+I can use if and else statements.
+Look at the code below:
+
+if (pet == "dog") {
+    console.log("I love dogs!")
+}
+else {
+    console.log("Have you considered getting a dog?")
+}
+
+Here I am saying that if the value of the variable "pet", is equal to "dog" then do the thing in the brackets (log a message to the console).
+If the statement after the "if" is false - so pet does not equal "dog" - then the "else" statement will come into effect (logging a different message to the console).

@@ -1,0 +1,93 @@
+Higher or low activity
+
+Aim: Apply all your knowledge to make a higher or lower guessing game.
+
+Help:
+First, what are the rules of a higher or lower guessing game?
+How many guesses will you allow the player to have?
+What is the range of numbers that the answer could be?
+What happens if they guess too high, or too low? Will you give a clue?
+
+Step 1 - You want to generate the number for the player to guess.
+This can be done by using:
+
+    var y = Math.floor(Math.random() * 10 + 1);
+
+y as a variable name is not very descriptive, so you may want to give this a different name.
+
+Step 2 - Give the user an input prompt to enter their guess:
+
+    var guess = prompt('Add text here')
+
+Step 4 - Add in conditionals for whether the guess matches y (your variable name), or is too high or low.
+The following code is the template for what you'll need; just add in the missing values:
+
+if (x == y) {
+    console.log("   ")
+}
+else if (x < y) {
+    console.log (" ")
+}
+else {
+    console.log(" ")
+}
+
+Step 5 - If I have guessed incorrectly, then the prompt is now gone. Oh no!
+I want to repeat the last process until I get it right. This is where your learnings on 'loops' come in.
+There are many different approaches to take.
+You could use a while loop for example:
+
+    while (guess != y) {
+        insert your if/else block here
+    }
+
+You will then need to move the 
+    var guess = prompt('Add text here')
+into the while loop. BUT it is not conventional to have a var written inside the while loop like this. So what we can do is to add 
+    guess = prompt('Guess my number')
+into the while loop (note the var is removed), at the top before your first if.
+
+Then change your
+    var guess = prompt('Add text here')
+outside your while loop/at the top of your file to just
+    var guess;
+
+Fantastic! Now you have a working higher or lower guessing game!
+
+Step 6 - This works, but it can be much improved by limiting the number of guesses a player can make.
+You will need to keep track of the number of guesses taken.
+
+    var guessCount = 0
+
+Be able to increment the guessCount after each incorrect guess.
+
+    guessCount++
+
+Then tell the player they have lost if they guess more than the number you will allow them.
+
+This can be done in several ways...
+
+Step 7 - A condition could be placed within the current else if statement, and else statement.
+You will need to break out of the loop after telling the player they have lost.
+
+    if (guessCount >= 5) {
+        console.log("You lose")
+        break
+    }
+
+OR a function could be written to check their number of guesses. For example:
+
+    function checkGuess(guessTimes) {
+        if (guessTimes >= 5, guess !=y ) {
+            console.log("You are out of guesses, you lose!")
+        }
+    }
+
+    Then call the function using your guessCount variable as the parameter:
+
+    var numberOfGuesses = checkGuess(guessCount)
+    console.log(numberOfGuesses)
+
+With this method a second parameter would need to be added to the while loop you have, to also check if the guessCount is <= 4.
+
+Finished?: Can you improve this code? Which method described in step 7 do you think is the best? Why?

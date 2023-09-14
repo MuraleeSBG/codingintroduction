@@ -1,0 +1,11 @@
+Variables
+
+Task: Make your own variable and assign it your age as an integer (a whole number).
+
+Example:
+To make a var you can use the 'var' keyword
+For example, I might write: var pet = "dog".
+This means the variable named 'pet' has the value of 'dog'
+
+To see the contents of this variable in the console I can write:
+console.log(pet)

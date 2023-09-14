@@ -46,6 +46,8 @@ setTimeout(function fn() {
   seconds = date.getSeconds();
 }, 1000);
 
+/*
+
 //task 1
 let age = 22
 console.log(age);
@@ -71,6 +73,8 @@ function getAge(birthyear){
   var age = year - birthyear;
   return age;
 }
+
+*/
 
 //task 5
 
